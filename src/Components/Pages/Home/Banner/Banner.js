@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-//slider Image
+//slider Image for banner
 import img1 from '../../../../Assets/Banner Images/1.jpg'
 import img2 from '../../../../Assets/Banner Images/2.jpg'
 import img3 from '../../../../Assets/Banner Images/3.jpg'
