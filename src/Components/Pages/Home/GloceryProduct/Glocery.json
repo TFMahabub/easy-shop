@@ -1,0 +1,72 @@
+[
+  {
+    "imgUrl": "https://cartzilla.createx.studio/img/grocery/single/01.jpg",
+    "productName": "Muesli Fitness Nutritious Energy, Gluten Free (500g)",
+    "productCode": "G-01",
+    "price": 4.99,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/06/TataSampannArharDal1kg.jpg",
+    "productName": "Tata Sampann Arhar Dal 1kg",
+    "productCode": "G-02",
+    "price": 2.99,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/12/Baba-Katarni-1kg.webp",
+    "productName": "Baba Katarni 1kg",
+    "productCode": "G-03",
+    "price": 1.99,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/06/IndiaGateSuperBasmatiRice5kg.jpg",
+    "productName": "India Gate Super Basmati Rice 5kg",
+    "productCode": "G-04",
+    "price": 9.99,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/06/DaburJanmaGhunti125ml.jpg",
+    "productName": "Dabur Janma Ghunti 125ml",
+    "productCode": "G-05",
+    "price": 0.99,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/06/JohnsonsBabyCream100g.jpg",
+    "productName": "Johnson’s Baby Cream 100g",
+    "productCode": "G-06",
+    "price": 1.99,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/06/MothercareBabySoap75gB3G1Free.jpg",
+    "productName": "Mothercare Baby Soap 75g B3G1 Free",
+    "productCode": "G-07",
+    "price": 1.49,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/12/HimalayaBabySoapAloeVeraMilk75g.webp",
+    "productName": "Himalaya Baby Soap Aloe Vera & Milk 75g",
+    "productCode": "G-08",
+    "price": 0.49,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/06/JohnsonsBabyLotion100ml.jpg",
+    "productName": "Johnson’s Baby Lotion 50ml",
+    "productCode": "G-09",
+    "price": 0.45,
+    "porductCategory": "glocery"
+  },
+  {
+    "imgUrl": "https://meramart.com/wp-content/uploads/2022/12/Murhi500g.jpg",
+    "productName": "Murhi 500g",
+    "productCode": "G-10",
+    "price": 0.30,
+    "porductCategory": "glocery"
+  }
+]
