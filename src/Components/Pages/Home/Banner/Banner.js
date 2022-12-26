@@ -20,7 +20,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 const Banner = () => {
   return (
-    <>
+    <div className="rounded-lg">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -40,7 +40,7 @@ const Banner = () => {
         <SwiperSlide><img src={img3} className='rounded-lg' alt="" /></SwiperSlide>
         <SwiperSlide><img src={img4} className='rounded-lg' alt="" /></SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 

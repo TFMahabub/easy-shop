@@ -11,6 +11,7 @@ module.exports = {
       secondary: '#22C55E',
       third: '#0F172A',
       gray: '#6B7280',
+      lightGray: '#dadada',
       white: '#fff',
     },
     extend: {},
