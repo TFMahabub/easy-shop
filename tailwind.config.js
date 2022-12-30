@@ -5,9 +5,9 @@ module.exports = {
   ],
   theme: {
     colors: {
-      primary: '#E30047',
-      DarkPrimary: '#C8003E',
-      LightPrimary: '#ffccdc',
+      primary: '#099d84',
+      DarkPrimary: '#007e69',
+      LightPrimary: '#dafff9',
       secondary: '#22C55E',
       third: '#0F172A',
       gray: '#6B7280',

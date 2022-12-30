@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import RequiredInput from '../../ShearedComponents/Navbar/InputFeilds/RequiredInput';
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
+import { AuthProvider } from '../../../Contexts/Auth/UserContext';
+import toast from 'react-hot-toast';
 
 const SignUp = () => {
+  const {SignUpUser} = useContext(AuthProvider)
   const hangleOnSubmit = (e) =>{
     e.preventDefault()
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
 
+    SignUpUser(email, password)
+    .then(()=>{toast.success('sign up successfuly')})
+    .catch(err=>console.error(err))
     console.log(email, password);
   }
 

@@ -3,21 +3,23 @@ import RequiredInput from '../../ShearedComponents/Navbar/InputFeilds/RequiredIn
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
 import { AuthProvider } from '../../../Contexts/Auth/UserContext';
+import toast from 'react-hot-toast';
 
 const Login = () => {
-const {name} = useContext(AuthProvider)
+const {logInUserWithEmail} = useContext(AuthProvider)
 
-console.log(name);
+const hangleOnSubmit = (e) =>{
+  e.preventDefault()
+  const form = e.target;
+  const email = form.email.value;
+  const password = form.password.value;
+  logInUserWithEmail(email, password)
+  .then(()=>{toast.success('Log in succesfully')})
+  .catch(err=>console.error(err))
+  console.log(email, password);
+}
   const handleGoogleLogin = () =>{
     
-  }
-  const hangleOnSubmit = (e) =>{
-    e.preventDefault()
-    const form = e.target;
-    const email = form.email.value;
-    const password = form.password.value;
-
-    console.log(email, password);
   }
   return (
     <section className='bg-white container mx-auto lg:flex justify-center items-center lg:h-[83vh]'>

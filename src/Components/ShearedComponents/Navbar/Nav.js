@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiPhoneCall, FiShoppingCart, FiUser } from "react-icons/fi";
+import { AuthProvider } from '../../../Contexts/Auth/UserContext';
 
 const Nav = () => {
+  const {user} = useContext(AuthProvider)
   const [items, setItems] = useState(0)
-  const user = null;
+  
   const menus = [
     { id: 1, menu: 'Home', path: '/' },
     { id: 2, menu: 'About', path: '/about' },
@@ -15,7 +17,7 @@ const Nav = () => {
         <div className='bg-DarkPrimary py-1 hidden lg:block'>
           <div className='flex justify-between items-center container mx-auto'>
             <p>Trusted Online Shopping Site in United State</p>
-            <p className='flex items-center space-x-1'><FiPhoneCall className='text-lg'/> <span>+8812345678910 (9am-5pm)</span></p>
+            <p className='flex items-center space-x-1'><FiPhoneCall className='text-lg'/><span>+8812345678910 (9am-5pm)</span></p>
           </div>
         </div>
         <div className='bg-primary'>
@@ -44,8 +46,8 @@ const Nav = () => {
                 </>
                 :
                 <>
-                  <Link to='/signup'><button className='lg:py-[5px] py-1 px-3 hover:scale-105 duration-300 text-white border-2 hover:bg-LightPrimary hover:text-primary border-LightPrimary rounded-full font-medium text-lg'>Sign Up</button></Link>
-                  <Link to='/login'><button className='lg:py-[5px] py-1 px-3 hover:scale-105 duration-300 text-white border-2 hover:bg-LightPrimary hover:text-primary border-LightPrimary rounded-full font-medium text-lg'>Log In</button></Link>
+                  <Link to='/signup'><button className='lg:py-[2px] py-1 px-3 hover:scale-105 duration-300 text-white border-2 hover:bg-LightPrimary hover:text-primary border-LightPrimary rounded-full font-medium text-lg'>Sign Up</button></Link>
+                  <Link to='/login'><button className='lg:py-[2px] py-1 px-3 hover:scale-105 duration-300 text-white border-2 hover:bg-LightPrimary hover:text-primary border-LightPrimary rounded-full font-medium text-lg'>Log In</button></Link>
                 </>
               }
             </div>
