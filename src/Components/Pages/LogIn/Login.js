@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import RequiredInput from '../../ShearedComponents/Navbar/InputFeilds/RequiredInput';
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { BsFacebook, BsTwitter } from "react-icons/bs";
+import { AuthProvider } from '../../../Contexts/Auth/UserContext';
 
 const Login = () => {
+const {name} = useContext(AuthProvider)
 
-
+console.log(name);
   const handleGoogleLogin = () =>{
     
   }
@@ -38,7 +40,7 @@ const Login = () => {
           <p className="px-1 text-md text-gray">Login with</p>
           <div className="flex-1 h-px bg-gray"></div>
         </div>
-        <div className='flex items-center justify-evenly mt-2'>
+        <div className='flex items-center justify-between w-32 mt-2 mx-auto'>
           <AiFillGoogleCircle onClick={handleGoogleLogin} className='text-4xl text-primary cursor-pointer'/>
           <BsFacebook className='text-3xl text-primary cursor-pointer'/>
           <BsTwitter className='text-3xl text-primary cursor-pointer'/>

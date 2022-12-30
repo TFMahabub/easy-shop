@@ -14,7 +14,7 @@ const SignUp = () => {
   }
 
   const handleGoogleLogin = () =>{
-    
+
   }
   return (
     <section className='bg-white container mx-auto lg:flex justify-center items-center lg:h-[83vh]'>
@@ -41,7 +41,7 @@ const SignUp = () => {
           <p className="px-1 text-sm text-gray">Login with</p>
           <div className="flex-1 h-px bg-gray"></div>
         </div>
-        <div className='flex items-center justify-evenly mt-2'>
+        <div className='flex items-center justify-between w-32 mt-2 mx-auto'>
         <AiFillGoogleCircle onClick={handleGoogleLogin} className='text-4xl text-primary cursor-pointer'/>
           <BsFacebook className='text-3xl text-primary cursor-pointer'/>
           <BsTwitter className='text-3xl text-primary cursor-pointer'/>
