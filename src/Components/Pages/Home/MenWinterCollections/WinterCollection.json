@@ -1,0 +1,122 @@
+[
+  {
+    "imgUrl": "https://i.ibb.co/f4cmTwg/1.jpg",
+    "productName": "Changa Zeket",
+    "productCode": "Men-01",
+    "size": ["m", "l", "xl"],
+    "price": 28.00,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/Lvhs8bk/2.jpg",
+    "productName": "full cover Zeket",
+    "productCode": "Men-02",
+    "size": ["m", "l", "xl"],
+    "price": 25.00,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/KsSq5T1/3.jpg",
+    "productName": "konko Zeket",
+    "productCode": "Men-03",
+    "size": ["m", "l", "xl"],
+    "price": 29.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/vjhZY0c/4.jpg",
+    "productName": "arial cover Zeket",
+    "productCode": "Men-04",
+    "size": ["m", "l", "xl"],
+    "price": 24.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/kHBhzRk/5.jpg",
+    "productName": "cover white Zeket",
+    "productCode": "Men-05",
+    "size": ["m", "l", "xl"],
+    "price": 27.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/GsB7CSZ/7.jpg",
+    "productName": "Brown Leather Show",
+    "productCode": "Men-06",
+    "size": ["41", "42", "43", "44"],
+    "price": 29.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/vsFWkgh/8.jpg",
+    "productName": "Black High Leather Show",
+    "productCode": "Men-07",
+    "size": ["41", "42", "43", "44"],
+    "price": 39.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/YQ0p6kX/9.jpg",
+    "productName": "Brown light Leather Show",
+    "productCode": "Men-08",
+    "size": ["41", "42", "43", "44"],
+    "price": 32.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/jM083h8/10.jpg",
+    "productName": "Gince dark Jacket",
+    "productCode": "Men-09",
+    "size": ["m", "l", "xl"],
+    "price": 30.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/4FcXrpk/11.jpg",
+    "productName": "Gince light Jacket",
+    "productCode": "Men-10",
+    "size": ["m", "l", "xl"],
+    "price": 29.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/wRZF4WP/12.jpg",
+    "productName": "Cagual Cort check",
+    "productCode": "Men-11",
+    "size": ["m", "l", "xl"],
+    "price": 32.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/ChL7skc/13.jpg",
+    "productName": "Check Maflar",
+    "productCode": "Men-12",
+    "size": ["l", "xl"],
+    "price": 10.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/7j30t4m/14.jpg",
+    "productName": "White Sweater",
+    "productCode": "Men-13",
+    "size": ["m", "l", "xl"],
+    "price": 22.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/mcqzBNH/15.jpg",
+    "productName": "Dark Red Sweater",
+    "productCode": "Men-14",
+    "size": ["m", "xl"],
+    "price": 25.99,
+    "porductCategory": "men_winter_collection"
+  },
+  {
+    "imgUrl": "https://i.ibb.co/qyXb4FZ/16.jpg",
+    "productName": "Winter Cap",
+    "productCode": "Men-15",
+    "size": ["m", "l"],
+    "price": 8.99,
+    "porductCategory": "men_winter_collection"
+  }
+]

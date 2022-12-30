@@ -4,6 +4,7 @@
     "productName": "Muesli Fitness Nutritious Energy, Gluten Free (500g)",
     "productCode": "G-01",
     "price": 4.99,
+    "weight": "1kg",
     "porductCategory": "glocery"
   },
   {
@@ -11,6 +12,7 @@
     "productName": "Tata Sampann Arhar Dal 1kg",
     "productCode": "G-02",
     "price": 2.99,
+    "weight": "1kg",
     "porductCategory": "glocery"
   },
   {
@@ -18,6 +20,7 @@
     "productName": "Baba Katarni 1kg",
     "productCode": "G-03",
     "price": 1.99,
+    "weight": "1kg",
     "porductCategory": "glocery"
   },
   {
@@ -25,6 +28,7 @@
     "productName": "India Gate Super Basmati Rice 5kg",
     "productCode": "G-04",
     "price": 9.99,
+    "weight": "1kg",
     "porductCategory": "glocery"
   },
   {
@@ -32,6 +36,7 @@
     "productName": "Dabur Janma Ghunti 125ml",
     "productCode": "G-05",
     "price": 0.99,
+    "weight": "100ml",
     "porductCategory": "glocery"
   },
   {
@@ -39,6 +44,7 @@
     "productName": "Johnson’s Baby Cream 100g",
     "productCode": "G-06",
     "price": 1.99,
+    "weight": "700ml",
     "porductCategory": "glocery"
   },
   {
@@ -46,6 +52,7 @@
     "productName": "Mothercare Baby Soap 75g B3G1 Free",
     "productCode": "G-07",
     "price": 1.49,
+    "weight": "75g",
     "porductCategory": "glocery"
   },
   {
@@ -53,6 +60,7 @@
     "productName": "Himalaya Baby Soap Aloe Vera & Milk 75g",
     "productCode": "G-08",
     "price": 0.49,
+    "weight": "80g",
     "porductCategory": "glocery"
   },
   {
@@ -60,6 +68,7 @@
     "productName": "Johnson’s Baby Lotion 50ml",
     "productCode": "G-09",
     "price": 0.45,
+    "weight": "50g",
     "porductCategory": "glocery"
   },
   {
@@ -67,6 +76,7 @@
     "productName": "Murhi 500g",
     "productCode": "G-10",
     "price": 0.30,
+    "weight": "500g",
     "porductCategory": "glocery"
   }
 ]

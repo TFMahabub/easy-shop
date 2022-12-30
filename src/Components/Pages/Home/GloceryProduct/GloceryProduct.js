@@ -4,9 +4,9 @@ import CartSection from './CartSection';
 
 const GloceryProduct = () => {
   return (
-    <section className='mt-14 container mx-auto w-full'>
-      <Article porductName ='Glocery Product' url='glocery'/>
-      <CartSection />
+    <section className='my-14 container mx-auto w-full'>
+      <Article porductName ='Glocery Product' url='glocery_all'/>
+      <CartSection/>
     </section>
   );
 };
