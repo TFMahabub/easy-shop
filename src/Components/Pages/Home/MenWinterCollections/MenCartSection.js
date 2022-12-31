@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import '../GloceryProduct/ProductSwiper.css'
 import SingleCart from '../GloceryProduct/SingleCart';
 // Import Swiper React components
@@ -16,20 +16,16 @@ import "swiper/swiper.min.css";
 import SwiperCore, {
   Pagination,Navigation
 } from 'swiper/core';
+import { PRODUCT_CONTEXT } from '../../../../Contexts/Auth/ProductContext';
 
 // install Swiper modules
 SwiperCore.use([Pagination,Navigation]);
 
 const MenCartSection = () => {
-  const {data: menProducts, isLoading} = useQuery({
-    queryKey: ['menProducts'],
-    queryFn: async()=>{
-      const res = await fetch('http://localhost:5000/products/men_winter_product_category/men_winter_collection')
-      const data = await res.json();
-      return data
-    }    
-  })
-  
+  //get all products from PRODUCT_CONTEXT-
+  const { products } = useContext(PRODUCT_CONTEXT)
+  //filter men_winter_collection product-
+  const MensWinterCollections = products?.filter(product=>product.porductCategory === 'men_winter_collection')
 
 
 
@@ -64,16 +60,15 @@ const MenCartSection = () => {
   }
 
 
-  if(isLoading){return <h3>loading...</h3>}
-  console.log(menProducts);
+  if(!MensWinterCollections){return <h3>loading...</h3>}
   
   return (
       <div className='mt-6'>
         <Swiper onSwiper={setSwiperRef} slidesPerView={3} centeredSlides={true} spaceBetween={30}  navigation={true} className="mySwiper">
           {
-            menProducts.map(product=>
-            <SwiperSlide>
-              <SingleCart product={product} key={product._id}/>
+            MensWinterCollections?.map(product=>
+            <SwiperSlide key={product._id}>
+              <SingleCart product={product} />
             </SwiperSlide>
               )
           }

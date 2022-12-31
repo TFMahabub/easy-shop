@@ -6,14 +6,15 @@ import { AuthProvider } from '../../../Contexts/Auth/UserContext';
 import toast from 'react-hot-toast';
 
 const Login = () => {
-const {logInUserWithEmail} = useContext(AuthProvider)
+const {logIn} = useContext(AuthProvider)
 
 const hangleOnSubmit = (e) =>{
   e.preventDefault()
   const form = e.target;
   const email = form.email.value;
   const password = form.password.value;
-  logInUserWithEmail(email, password)
+  
+  logIn(email, password)
   .then(()=>{toast.success('Log in succesfully')})
   .catch(err=>console.error(err))
   console.log(email, password);
@@ -23,7 +24,7 @@ const hangleOnSubmit = (e) =>{
   }
   return (
     <section className='bg-white container mx-auto lg:flex justify-center items-center lg:h-[83vh]'>
-      <div className='max-w-lg border-2 border-primary p-8 rounded-lg mt-16 '>
+      <div className='min-w-lg border-2 border-primary p-8 rounded-lg mt-16 '>
         <form onSubmit={hangleOnSubmit} >
           <div className='mt-2'>
             <label htmlFor="" className='text-sm text-gray'>Email:</label><br />

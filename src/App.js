@@ -2,13 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import { RouterProvider } from 'react-router-dom';
 import routers from './routers/router';
+import ProductContext from './Contexts/Auth/ProductContext';
 
 function App() {
   return (
     <div>
-      <RouterProvider router={routers}>
-
-      </RouterProvider>
+      <ProductContext>
+        <RouterProvider router={routers} />
+      </ProductContext>
     </div>
   );
 }

@@ -1,5 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './ProductSwiper.css'
 import SingleCart from './SingleCart';
 // Import Swiper React components
@@ -16,28 +15,21 @@ import "swiper/swiper.min.css";
 import SwiperCore, {
   Pagination,Navigation
 } from 'swiper/core';
+import { PRODUCT_CONTEXT } from '../../../../Contexts/Auth/ProductContext';
 
 // install Swiper modules
 SwiperCore.use([Pagination,Navigation]);
 
 const CartSection = () => {
-  const {data: products, isLoading} = useQuery({
-    queryKey: ['products'],
-    queryFn: async()=>{
-      const res = await fetch('http://localhost:5000/products/glocery_product_category/glocery')
-      const data = await res.json();
-      return data
-    }    
-  })
-  
-
-
+  //get all products from PRODUCT_CONTEXT-
+  const {products, isLoading} = useContext(PRODUCT_CONTEXT);
+  //filter glocery product-
+  const gloceryProducts = products?.filter(product=>product.porductCategory === 'glocery')
 
 
 
 
   const [swiperRef, setSwiperRef] = useState(null);
-
   let appendNumber = 4;
   let prependNumber = 1;
 
@@ -64,16 +56,16 @@ const CartSection = () => {
   }
 
 
-  if(isLoading){return <h3>loading...</h3>}
+  if(!gloceryProducts){return <h3>loading...</h3>}
 
   
   return (
       <div className='mt-6'>
         <Swiper onSwiper={setSwiperRef} slidesPerView={3} centeredSlides={true} spaceBetween={30}  navigation={true} className="mySwiper">
           {
-            products.map(product=>
-            <SwiperSlide>
-              <SingleCart product={product} key={product._id}/>
+            gloceryProducts?.map(product=>
+            <SwiperSlide key={product._id} >
+              <SingleCart product={product} />
             </SwiperSlide>
               )
           }

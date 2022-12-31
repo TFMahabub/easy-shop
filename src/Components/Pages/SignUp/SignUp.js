@@ -6,14 +6,14 @@ import { AuthProvider } from '../../../Contexts/Auth/UserContext';
 import toast from 'react-hot-toast';
 
 const SignUp = () => {
-  const {SignUpUser} = useContext(AuthProvider)
+  const {signUp} = useContext(AuthProvider)
   const hangleOnSubmit = (e) =>{
     e.preventDefault()
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
 
-    SignUpUser(email, password)
+    signUp(email, password)
     .then(()=>{toast.success('sign up successfuly')})
     .catch(err=>console.error(err))
     console.log(email, password);
