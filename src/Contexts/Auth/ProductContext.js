@@ -3,7 +3,7 @@ import React, { createContext, useContext } from 'react';
 
 export const PRODUCT_CONTEXT = createContext()
 const ProductContext = ({children}) => {
-  const {data: products, isLoading} = useQuery({
+  const {data: products, isLoading, refetch} = useQuery({
     queryKey: ['products'],
     queryFn: async()=>{
       const res = await fetch('http://localhost:5000/products')
@@ -14,7 +14,8 @@ const ProductContext = ({children}) => {
 
   const ProductsValue = {
     products,
-    isLoading
+    isLoading,
+    refetch
   }
   return (
     <PRODUCT_CONTEXT.Provider value={ProductsValue}>

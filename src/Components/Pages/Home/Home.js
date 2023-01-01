@@ -1,6 +1,5 @@
 import React from 'react';
 import Banner from './Banner/Banner';
-import CartSection from './GloceryProduct/CartSection';
 import GloceryProduct from './GloceryProduct/GloceryProduct';
 import MenWinter from './MenWinterCollections/MenWinter';
 
